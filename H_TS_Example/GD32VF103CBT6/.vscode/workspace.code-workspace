@@ -1,0 +1,47 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		
+		"terminal.integrated.env.windows": {
+			//openocd -f $env:cfg
+			"Path": "D:/appFile/MounRiver/MounRiver_Studio/toolchain/OpenOCD-GD/bin",
+			"cfg":"D:/appFile/MounRiver/MounRiver_Studio/toolchain/OpenOCD-GD/bin/openocd_gdlink_riscv.cfg"
+		},
+		"terminal.integrated.env.linux": {
+			"PATH": "..."
+		},
+		"terminal.integrated.env.osx": {
+			"path": "..."
+		},
+		"terminal.integrated.profiles.windows": {
+			"PowerShell": {
+				"source": "PowerShell",
+				"icon": "terminal-powershell"
+			},
+		},
+		"terminal.integrated.defaultProfile.windows": "PowerShell",
+
+		"files.associations": {
+			"systick.h": "c",
+			"stdint.h": "c",
+			"system.h": "c",
+			"gd32vf103.h": "c",
+			"peripheral.h": "c",
+			"riscv_encoding.h": "c",
+			"h_threadscheduler.h": "c",
+			"h_threadscheduler_config.h": "c",
+			"gpio.h": "c",
+			"ip_gpio.h": "c",
+			"ip_dma.h": "c",
+			"dma.h": "c",
+			"usart.h": "c",
+			"peripherals_instence.h": "c",
+			"memorymalloc.h": "c",
+			"package.h": "c"
+		}
+	}
+}

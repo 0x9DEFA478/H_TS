@@ -1,0 +1,36 @@
+{
+    "configurations": [
+        {
+            "name": "GD32V",
+            "includePath": [
+                //"${workspaceFolder}/**",
+                "${workspaceFolder}/GD32VF103_Peripherals",
+                "${workspaceFolder}/BSP",
+                "${workspaceFolder}/Application",
+                "${workspaceFolder}/H_Lib",
+                "${workspaceFolder}/GD32VF103_Peripherals/Include",
+                "${workspaceFolder}/RISCV/drivers",
+                "${workspaceFolder}",
+                "${workspaceFolder}/BSP/InternalPeripherals/IP",
+                "${workspaceFolder}/BSP/InternalPeripherals/HAL",
+                "${workspaceFolder}/H_ThreadScheduler",
+                "${workspaceFolder}/BSP/Instance",
+                "${workspaceFolder}/Package",
+                "${workspaceFolder}/BSP/MemoryMalloc"
+            ],
+            "defines": [
+                "USE_STDPERIPH_DRIVER",
+                "GD32VF103C_START",
+                "__riscv",
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "cStandard": "c99",
+            "cppStandard": "c++11",
+            "compilerPath": "D:/appFile/MounRiver/MounRiver_Studio/toolchain/arm-none-eabi-gcc/bin/arm-none-eabi-gcc.exe",
+            "intelliSenseMode": "gcc-x86"
+        }
+    ],
+    "version": 4
+}

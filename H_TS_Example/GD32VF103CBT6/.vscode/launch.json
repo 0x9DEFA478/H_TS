@@ -1,0 +1,46 @@
+{
+  // 使用 IntelliSense 了解相关属性。 
+  // 悬停以查看现有属性的描述。
+  // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "debug",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/obj/GD32VF103CBT6.elf",
+      "stopAtEntry": true,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": true,
+      "MIMode": "gdb",
+      "targetArchitecture": "arm",
+      "miDebuggerPath": "D:/appFile/MounRiver/MounRiver_Studio/toolchain/RISC-V Embedded GCC/bin/riscv-none-embed-gdb.exe",
+      "setupCommands": [
+        {
+          "text":"set mem inaccessible-by-default off"
+        },
+        {
+          "text":"set arch riscv:rv32"
+        },
+        {
+          "text":"set remotetimeout unlimited"
+        },
+        {
+          "description": "装载文件",
+          "text": "file 'E:/MCU/GD32VF1/GD32VF103CBT6/obj/GD32VF103CBT6.elf'",
+          //"ignoreFailures": true
+        },
+				{
+					"text": "target remote localhost:3333"
+				},
+				{
+					"text": "monitor halt"
+				},
+				{
+					"text": "load"
+				}
+      ]
+    }
+  ]
+}
